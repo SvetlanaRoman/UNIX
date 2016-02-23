@@ -1,0 +1,608 @@
+    1  touch testfile
+    2  cat testfile
+    3  ls
+    4  rm testfile
+    5  ls
+    6  cal
+    7  date
+    8  man kil
+    9  man kill
+   10  ps
+   11  ps -aux
+   12  ps aux | grep jedit
+   13  kill 17167
+   14  kill 2284
+   15  kill 2322
+   16  man kill
+   17  ps aux | grep jedit
+   18  kill 17164
+   19  ps aux | grep jedit
+   20  ps aux
+   21  pwd
+   22  mkdir task1
+   23  cd task1
+   24  pwd
+   25  mkdir backup
+   26  ls
+   27  ls -l
+   28  man date
+   29  touch date.txt
+   30  date > date.txt
+   31  cat date.txt
+   32  touch files.txt
+   33  ls -l
+   34  man ls
+   35  ls
+   36  ls > files.txt
+   37  cat files.txt
+   38  touch processes.txt
+   39  man ps
+   40  ps axu
+   41  ps 
+   42  ps > processes.txt
+   43  cat processes.txt
+   44  ps axu > processes.txt
+   45  cat processes.txt
+   46  history
+   47  man history
+   48  history > log.txt
+   49  cat log.txt
+   50  nano log.txt
+   51  cat log.txt
+   52  man >
+   53  touch merge.txt
+   54  cat date.txt, files.txt, processes.txt, log.txt > merge.txt
+   55  cat date.txt > merge.txt
+   56  cat files.txt >> merge.txt
+   57  cat processes.txt >> merge.txt
+   58  cat log.txt >> merge.txt
+   59  cat merge.txt
+   60  cat files.txt
+   61  cat date.txt
+   62  cat processes.txt
+   63  cat log.txt
+   64  cat merge.txt
+   65  cat files.txt log.txt > merge.txt
+   66  ls
+   67  rm merge.txt 
+   68  ls -l
+   69  cat *.txt > merge.txt
+   70  cat merge.txt
+   71  man history
+   72  rm *.txt 
+   73  ls
+   74  touch log.txt
+   75  cat history > log.txt
+   76  mv log.txt backup
+   77  rm *.txt
+   78  cat backup/log.txt
+   79  cd backup
+   80  ls
+   81  cat log.txt
+   82  rm -r
+   83  rm -R
+   84  rm --help
+   85  rm -r .
+   86  rm . -r
+   87  cd ..
+   88  pwd
+   89  rm - r backup
+   90  rm --help
+   91  rm -r backup
+   92  history > log.txt
+   93  ls
+   94  mkdir backup
+   95  cat log.txt
+   96  mv --help
+   97  mv log.txt backup
+   98  ls
+   99  cd backup
+  100  ls
+  101  cat log.txt
+  102  cd ..
+  103  pwd
+  104  rm *.txt
+  105  ls
+  106  man cal
+  107  cal -J
+  108  man cal
+  109  cal
+  110  cal -e
+  111  man cal
+  112  ncal -J
+  113  ncal -e
+  114  touch script.sh
+  115  ls -l
+  116  man chmode
+  117  suudo -s
+  118  sudo -s
+  119  man chmod 
+  120  man chmod
+  121  chmod +x script.sh
+  122  ls -l script.sh
+  123  man grep
+  124  mkdir lab1task1
+  125  cd lab1task1
+  126  nano file.txt
+  127  cat file.txt
+  128  grep \! file.txt
+  129  grep \? file.txt
+  130  nano file.txt
+  131  grep \? file.txt
+  132  grep \?$  file.txt
+  133  grep \?$  file.txt |wc
+  134  man wc
+  135  grep \?$  file.txt |wc -l
+  136  grep \!$  file.txt |wc -l
+  137  nano file.txt
+  138  cat file.txt
+  139  grep ^« file.txt
+  140  man sort
+  141  sort file.txt
+  142  man grep
+  143  grep -c  \!$  file.txt
+  144  grep  \!$  file.txt
+  145  grep  \?$  file.txt
+  146  grep -c \?$  file.txt
+  147  man grep
+  148  grep file.txt |sort
+  149  grep '' file.txt
+  150  grep '' file.txt | sort
+  151  touch grep.txt
+  152  man grep | grep 'sort'
+  153  man grep
+  154  nano grep.txt
+  155  man grep
+  156  nano file.txt
+  157  grep Маш file.txt
+  158  grep Маш(а|и|е|у|ей){1} file.txt
+  159  grep Маша|и|е|у|ей{1} file.txt
+  160  grep Маш(а)|(и) file.txt
+  161  grep Маша|и file.txt
+  162  grep 'Маша|и' file.txt
+  163  grep 'Маша'|'и' file.txt
+  164  man grep
+  165  grep он|я file.txt
+  166  grep 'Маш[а|и]' file.txt
+  167  grep 'Маш[а|и|е|у|ей]' file.txt
+  168  grep -w 'Маш[а|и|е|у|ей]' file.txt
+  169  grep -w 'Маш[а|и|е|у|ей]{1}' file.txt
+  170  grep -w ' Маш[а|и|е|у|ей] ' file.txt
+  171  grep ' Маш[а|и|е|у|ей] ' file.txt
+  172  nano file.txt
+  173  grep ' Маш[а|и|е|у|ей] ' file.txt
+  174  grep 'Маш[а|и|е|у|ей]' file.txt
+  175  grep -w 'Маш[а|и|е|у|ей]' file.txt
+  176  grep  ' Маш[а|и|е|у|ей]' file.txt
+  177  grep  'Маш[а|и|е|у|ей]{1}' file.txt
+  178  grep  'Маш[а]{1}' file.txt
+  179  grep  Маш[а]{1} file.txt
+  180  grep  Маш[и]{1} file.txt
+  181  grep  Маш[и] file.txt
+  182  man grep
+  183  grep -e  Маш[и]{1} file.txt
+  184  grep -e  Маш[и] file.txt
+  185  grep -e  'Маш[и]' file.txt
+  186  grep -e  'Маш[и]{1}' file.txt
+  187  grep -e  'Маш[и|а]{1}' file.txt
+  188  grep -e  'Маш[и|а]/{1/}' file.txt
+  189  grep -e  'Маш[и|а]{1}' file.txt
+  190  man grep
+  191  grep -p  'Маш[и|а]{1}' file.txt
+  192  grep --help
+  193  grep -p  'Маш[и|а]{1}' file.txt
+  194  grep -e  'Маш([и|а]){1}' file.txt
+  195  grep -e  'Маш(и){1}' file.txt
+  196  grep  'Маш(и){1}' file.txt
+  197  grep  'Маш(и)' file.txt
+  198  grep  Маш(и) file.txt
+  199  grep  Маши{1} file.txt
+  200  grep  'Маши{1}' file.txt
+  201  grep -e 'Маши{1}' file.txt
+  202  grep  '\bМаш[а|и|е|у|ей]\b' file.txt
+  203  grep  '\wМаш[а|и|е|у|ей]\w' file.txt
+  204  grep  'Маш[а|и|е|у|ей]' file.txt
+  205  grep  '\bМаш[а|и|е|у|ей]\b' file.txt
+  206  grep  '\bМаш[а|и|е|у|ей]\W+' file.txt
+  207  grep  '\bМаш[а|и|е|у|ей]' file.txt
+  208  grep -e  '\bМаш[а|и|е|у|ей]\b' file.txt
+  209  grep -e  '/bМаш[а|и|е|у|ей]/b' file.txt
+  210  grep -e  'М{1}' file.txt
+  211  grep -e  'М/{1/}' file.txt
+  212  grep -e  'М\{1\}' file.txt
+  213  grep  ' Маш\([а|и|е|у|ей]\)' file.txt
+  214  grep  ' Маш[а|и|е|у|ей]' file.txt
+  215  grep  'Маш[а|и|е|у|ей]' file.txt
+  216  grep  'Маш\([а|и|е|у|ей]\)' file.txt
+  217  grep  'Маш\([а|и|е|у|ей]\)\{1\}' file.txt
+  218  grep  'Маш([а|и|е|у|ей])\{1\}' file.txt
+  219  grep  '\bМаш[а|и|е|у|ей]\b' file.txt
+  220  grep  'Маш[а|и|е|у|ей]' file.txt
+  221  grep  'a\{1\}' file.txt
+  222  nano file.txt
+  223  grep  'a\{1\}' file.txt
+  224  cat file.txt
+  225  grep -e 'a\{1\}' file.txt
+  226  grep  '\bМаш[а|и|е|у|ей]\b' file.txt
+  227  grep  '/bМаш[а|и|е|у|ей]/b' file.txt
+  228  grep  '\WМаш[а|и|е|у|ей]\W' file.txt
+  229  grep  '\wМаш[а|и|е|у|ей]\w' file.txt
+  230  grep  '\wМаш[а|и|е|у|ей]\W' file.txt
+  231  grep  '\WМаш[а|и|е|у|ей]\W' file.txt
+  232  grep  '\bМаш[а|и|е|у|ей]' file.txt
+  233  grep  '\BМаш[а|и|е|у|ей]' file.txt
+  234  grep -e  '\BМаш[а|и|е|у|ей]' file.txt
+  235  grep -e -w '\BМаш[а|и|е|у|ей]' file.txt
+  236  grep -w '\BМаш[а|и|е|у|ей]' file.txt
+  237  grep -w '\bМаш[а|и|е|у|ей]' file.txt
+  238  grep -w '\bМаш[а|и|е|у|ей]\b' file.txt
+  239  cat file.txt
+  240  grep -w '\bМаш[а|и|е|у|\(ей\)]\b' file.txt
+  241  grep -w '\bМаш[а|и|е|у|/(ей/)]\b' file.txt
+  242  grep -w '\bМаш[а|и|у|ей|е]\b' file.txt
+  243  grep -w '\b\(Маш[а|и|у|е]\)|Машей\b' file.txt
+  244  grep -w '\bМашей\b' file.txt
+  245  grep -w '\bМашей|a\b' file.txt
+  246  grep -w '\bМаш[]\b' file.txt
+  247  grep -w '\bМашей|а\b' file.txt
+  248  grep -w '\bМаш[аиуе]\b' file.txt
+  249  grep -w '(Маш[аиуе])' file.txt
+  250  grep -w '\(Маш[аиуе]\)' file.txt
+  251  grep -w '\(Маш[аиу]\)' file.txt
+  252  grep -w '\(Маш[аиу]\)|Машей' file.txt
+  253  grep -w '\(Маш[аиу]\)\|Машей' file.txt
+  254  grep -w '\(Маш[аиуе]\)\|Машей' file.txt
+  255  grep -w '\b\(Маш[аиуе]\)\|Машей\b' file.txt
+  256  grep -w '\b\(Маш[аиуе]\b\)\|\bМашей\b' file.txt
+  257  grep  '\b\(Маш[аиуе]\b\)\|\bМашей\b' file.txt
+  258  grep -w '\b\(Маш[аиуе]\b\)\|\bМашей\b' file.txt
+  259  nano file.txt
+  260  grep -w '\b\(Маш[аиуе]\b\)\|\bМашей\b' file.txt
+  261  cat file.txt
+  262  man sed
+  263  sed /[^«]/
+  264  sed -e /[^«]/
+  265  sed -e /[^«]/ file.txt
+  266  sed -e /[а]/ file.txt
+  267  sed -e /а/p file.txt
+  268  sed -e /[«]/p file.txt
+  269  sed -e /^«/p file.txt
+  270  sed -e \^«\p file.txt
+  271  sed -e /Маша/p file.txt
+  272  sed -e \Маша\p file.txt
+  273  sed /Маша/p file.txt
+  274  sed /'Маша'/p file.txt'\
+  275  cd lab1task1
+  276  sed -n /Маша/p file.txt
+  277  sed /Маша/p file.txt
+  278  man sed
+  279  sed /Маша/a \text file.txt
+  280  sed -e /Маша/a \text file.txt
+  281  sed -e /Маша/ a \text file.txt
+  282  sed -e /Маша/ a\text file.txt
+  283  sed -e /Маша/a\text file.txt
+  284  nano file.txt
+  285  sed -n /Маша/a\text file.txt
+  286  sed -e /Маша/a\text file.txt
+  287  sed -e /Маша/ file.txt
+  288  sed /Маша/ file.txt
+  289  sed -n '/Маша/p' file.txt
+  290  sed '/Маша/p' file.txt
+  291  sed -n '/^[^«]/'
+  292  sed -n '/^[^«]/p'
+  293  sed -n '/^«/p'
+  294  sed -n '/^М/p'
+  295  sed -n '/Маша/p'
+  296  sed -n '/^М/p' file.txt
+  297  sed -n '/^«/p' file.txt
+  298  sed -n '/^[^«]/p' file.txt
+  299  sed '/Маша/Текст/s' file.txt
+  300  sed 's/Маша/Текст/' file.txt
+  301  sed 's/\(\bМаш[аиуе]\b\)\|\bМашей\b/Маша/' file.txt
+  302  sed 's/\(.\)*\(\bМаш[аиуе]\b\)\|\bМашей\b/Маша/' file.txt
+  303  sed 's/\(.\)*\(\bМаш[аиуе]\b\)\|\bМашей\b\(\.)*/Маша/' file.txt
+  304  sed 's/\(.\)*\(\bМаш[аиуе]\b\)\|\bМашей\b\(.\)*/Маша/' file.txt
+  305  sed 's/\(.\)*\(\(\bМаш[аиуе]\b\)\|\bМашей\b\)\(\.)*/Маша/' file.txt
+  306  sed 's/Маш[аиуе]/Маша/' file.txt
+  307  sed 's/Маш[аиуе]|Машей/Маша/' file.txt
+  308  sed 's/(Маш[аиуе])|(Машей)/Маша/' file.txt
+  309  sed 's/\(Маш[аиуе]\)|\(Машей\)/Маша/' file.txt
+  310  sed 's/\(Маш[аиуе]\)\|\(Машей\)/Маша/' file.txt
+  311  grep 'Маш[аиуе\(ей\)]'
+  312  grep 'Маш[аиуе\(ей\)]' file.txt
+  313  grep 'Маш[аиу\(ей\)]' file.txt
+  314  grep 'Маш[аиуе]\|Машей' file.txt
+  315  grep '\bМаш[аиуе]\|Машей\b' file.txt
+  316  grep '\b\(Маш[аиуе]\|Машей\)\b' file.txt
+  317  grep '\bМаш[аиуе]\|Машей\b' file.txt
+  318  grep 'Маш[аиуе]\|Машей' file.txt
+  319  grep '\(\bМаш[аиуе]\b\)\|\(\bМашей\b\)' file.txt
+  320  grep '\b\(Маш[аиуе]\b\)\|\(\bМашей\b\)' file.txt
+  321  grep '\bМашей\b' file.txt
+  322  grep -w '\(\bМаш[аиуе]\b\)\|\(\bМашей\b\)' file.txt
+  323  grep -w '(.)*\(\bМаш[аиуе]\b\)\|\(\bМашей\b\)' file.txt
+  324  grep -w '\(.\)*\(\bМаш[аиуе]\b\)\|\(\bМашей\b\)' file.txt
+  325  grep -w '\(.\)*\(\bМаш[аиуе]\b\)\|\(\bМашей\b\)\(.\)*' file.txt
+  326  grep -w '\(.\)*\(\bМаш[аиуе]\b\)\(.\)*\|\(.\)*\(\bМашей\b\)\(.\)*' file.txt
+  327  sed 's/\(.\)*\(\bМаш[аиуе]\b\)\(.\)*\|\(.\)*\(\bМашей\b\)\(.\)*/Маша/' file.txt
+  328  history > history.txt
+  329  cat history.txt
+  330  man sed
+  331  sed 'y/абвгдеёжзийклмнопрстуфхцчшщъыьэюя/яабвгдеёжзийклмнопрстуфхцчшщъыьэю/' file.txt
+  332  man sed
+  333  sed -i 'y/абвгдеёжзийклмнопрстуфхцчшщъыьэюя/яабвгдеёжзийклмнопрстуфхцчшщъыьэю/' file.txt
+  334  sed 'y/[а-я]/яабвгдеёжзийклмнопрстуфхцчшщъыьэю/' file.txt
+  335  sed -i 'y/абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ/яабвгдеёжзийклмнопрстуфхцчшщъыьэюЯАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮ/' file.txt
+  336  sed 'y/абвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ/яабвгдеёжзийклмнопрстуфхцчшщъыьэюЯАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮ/' file.txt
+  337  cat file.txt
+  338  sed '!$\!!!' file.txt
+  339  sed '/!$/a\!!!' file.txt
+  340  sed '/!$/i\!!!' file.txt
+  341  cd ..
+  342  pwd
+  343  mkdir lab1task3
+  344  cd lab1task3
+  345  pwd
+  346  touch ЦУМ_10.10.2006
+  347  touch ГУМ_10.10.2006
+  348  touch Детский.Мир_10.11.2007
+  349  find ./
+  350  touch testfile
+  351  20.02.1995 > testfile
+  352  echo 20.02.1995 > testfile
+  353  cat testfile
+  354  echo .2005 >> testfile
+  355  echo .19955 >> testfile
+  356  cat testfile
+  357  echo .20 >> testfile
+  358  echo 234 >> testfile
+  359  grep /./(19\|20\)\d\d testfile
+  360  grep \./(19/|20/)\d\d testfile
+  361  grep \./(19/|20/) testfile
+  362  grep \. testfile
+  363  grep \.19 testfile
+  364  grep \.(19|20) testfile
+  365  grep \.\(19|20) testfile
+  366  grep \.\(19|20\) testfile
+  367  grep \./(19|20/) testfile
+  368  grep '\./(19|20/)' testfile
+  369  grep '\.19' testfile
+  370  grep '\.\(19\|20\)' testfile
+  371  grep '\.\(19\|20\)\d\d' testfile
+  372  grep '\.\(19\|20\)/d\d' testfile
+  373  grep '\.\(19\|20\)/d/d' testfile
+  374  grep '\.\(19\|20\)' testfile
+  375  grep '\.\(19\|20\)[0-9][0-9]' testfile
+  376  grep '\.\(19\|20\)[0-9][0-9]$' testfile
+  377  cat testfile
+  378  echo .1856 >> testfile
+  379  grep '\.\(19\|20\)[0-9][0-9]$' testfile
+  380  grep '\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$' testfile
+  381  echo 21.00.2005 >> testfile
+  382  grep '\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$' testfile
+  383  echo 22.16.2003 >> testfile
+  384  grep '\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$' testfile
+  385  grep '\(0[1-9]\|1[0-9]\|2[0-9]\|3[01])\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$' testfile
+  386  grep '\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$' testfile
+  387  cat testfile
+  388  echo 32.01.2001
+  389  echo 32.01.2001 >> testfile
+  390  grep '\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$' testfile
+  391  grep '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$' testfile
+  392  file ./| grep '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$'
+  393  file ./ | grep '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$'
+  394  file ./ | grep -i '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$'
+  395  file ./ | grep -i '\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$'
+  396  file ./ | grep '\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$'
+  397  file ./
+  398  pwd
+  399  find ./ | grep '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$'
+  400  touch 10.12.2012
+  401  find ./ | grep '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$'
+  402  history > history.txt
+  403  touch prog1.awk
+  404  nano prog1.awk
+  405  nano testfile2
+  406  awk -f prog1.awk testfile2
+  407  cat testfile2
+  408  cat prog1.awk
+  409  nano prog1.awk
+  410  awk -f prog1.awk testfile2
+  411  nano prog1.awk
+  412  awk -f prog1.awk testfile2
+  413  find ./ | grep '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$' | awk -f prog1.awk
+  414  find ./ | grep '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$' | sed 's/\.\///a'
+  415  find ./ 
+  416  find
+  417  find -name
+  418  find .
+  419  find ./ -regexp '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0
+  420  find . -regexp '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$' 
+  421  find . -regex '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$' 
+  422  find ./ | grep '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$'
+  423  ls
+  424  ls | grep '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$'
+  425  ls | grep '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$' | awk -f prog1.awk
+  426  touch Детский.Мир_10.10.2006
+  427  ls | grep '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$' | awk -f prog1.awk
+  428  touch Детский_Мир_10.10.2006
+  429  ls | grep '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$' | awk -f prog1.awk
+  430  nano ЦУМ_10.10.2006
+  431  nano prog2.awk
+  432  ls | awk -f prog2.awk
+  433  ls
+  434  cat ЦУМ_10.10.2006 
+  435  cat prog2.awk 
+  436  ls | awk -f prog2.awk
+  437  nano prog2.awk 
+  438  ls | awk -f prog2.awk
+  439  nano prog2.awk 
+  440  ls | awk -f prog2.awk
+  441  ls | grep '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$' | awk -f prog1.awk
+  442  touch H&M_10.10.2006
+  443  touch H_and_M_10.10.2006
+  444  ls | grep '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$' | awk -f prog1.awk
+  445  touch Витязь_10.10.2006
+  446  ls | grep '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$' | awk -f prog1.awk
+  447  touch BeFree_10.10.2006
+  448  ls | grep '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$' | awk -f prog1.awk
+  449  touch YNG_10.11.2006
+  450  ls | grep '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$' | awk -f prog1.awk
+  451  ls | grep '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$' | awk -f prog2.awk
+  452  cat prog1.awk 
+  453  nano prog2.awk 
+  454  awk -f prog2.awk ЦУМ_10.10.2006
+  455  cat ЦУМ_10.10.2006 
+  456  cat prog2.awk 
+  457  nano prog2.awk 
+  458  awk -f prog2.awk ЦУМ_10.10.2006
+  459  nano prog2.awk 
+  460  awk -f prog2.awk ЦУМ_10.10.2006
+  461  nano prog2.awk 
+  462  awk -f prog2.awk ЦУМ_10.10.2006
+  463  nano prog2.awk 
+  464  awk -f prog2.awk ЦУМ_10.10.2006
+  465  nano ЦУМ_10.10.2006 
+  466  awk -f prog2.awk ЦУМ_10.10.2006
+  467  cat ЦУМ_10.10.2006 
+  468  cat pr
+  469  cat prog2.awk 
+  470  nano prog3.awk
+  471  ls | grep '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$' | awk -f prog3.awk
+  472  ls
+  473  ls | grep '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$'
+  474  ls | grep '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$' | awk -f prog1.awk
+  475  nano prog1.awk 
+  476  ls | grep '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$' | awk -f prog1.awk
+  477  rm H_and_M_10.10.2006 
+  478  ls
+  479  rm H
+  480  ls
+  481  nano prog1.awk 
+  482  ls | grep '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$' | awk -f prog1.awk
+  483  rm Детский_Мир_10.10.2006 
+  484  ls
+  485  nano prog3.awk 
+  486  ls | grep '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$' | awk -f prog3.awk
+  487  nano prog3.awk 
+  488  ls | grep '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$' | awk -f prog3.awk
+  489  cat prog3.awk 
+  490  ls | grep '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$'
+  491  cat prog1.awk 
+  492  nano prog3.awk 
+  493  ls | grep '_\(0[1-9]\|1[0-9]\|2[0-9]\|3[01]\)\.\(0[1-9]\|1[012]\)\.\(19\|20\)[0-9][0-9]$' | awk -f prog3.awk
+  494  awk -f prog2.awk < ls
+  495  awk -f prog2.awk < ЦУМ_10.10.2006 
+  496  awk -f prog2.awk /ЦУМ_/ 
+  497  awk -f prog2.awk '/ЦУМ_/' 
+  498  awk -f prog2.awk ./ 
+  499  awk -f prog2.awk . 
+  500  awk -f prog2.awk *_ 
+  501  awk -f prog2.awk *_10.10.2006 
+  502  awk -f prog2.awk < find .
+  503  find | awk -f prog2.awk 
+  504  man awk
+  505  awk -f prog2.awk /\*_/ 
+  506  awk -f prog2.awk * 
+  507  awk -f prog2.awk *_ 
+  508  awk -f prog2.awk *_* 
+  509  awk -f prog2.awk ./* 
+  510  ./
+  511  ./*
+  512  awk -f prog2.awk *.awk
+  513  awk -f prog2.awk *_*[0-9]
+  514  awk -f prog2.awk *_[0-9]
+  515  nano prog4.awk
+  516  awk -f prog4.awk *_
+  517  awk -f prog4.awk *_*
+  518  find *_*
+  519  awk -f prog4.awk *_*
+  520  nano prog4.awk 
+  521  awk -f prog4.awk BeFree_*
+  522  awk -f prog4.awk BeFree_10.10.2006
+  523  nano prog4.awk 
+  524  awk -f prog4.awk *_*
+  525  nano prog4.awk 
+  526  awk -f prog4.awk *_*
+  527  nano ГУМ_10.10.2006 
+  528  awk -f prog4.awk *_*
+  529  nano prog4.awk 
+  530  awk -f prog4.awk *_*
+  531  nano prog4.awk 
+  532  awk -f prog4.awk *_*
+  533  cat prog4.awk 
+  534  nano prog4.awk 
+  535  awk -f prog4.awk *_*
+  536  touch edkkd_12n12n2012
+  537  nano edkkd_12n12n2012 
+  538  awk -f prog4.awk *_*
+  539  nano prog4.awk 
+  540  awk -f prog4.awk *_*
+  541  nano prog4.awk 
+  542  awk -f prog4.awk *_*
+  543  awk -f prog4.awk *
+  544  sudo -s
+  545  adduser sveta vboxsf
+  546  mkdir lab1
+  547  cd lab1
+  548  mkdir task1
+  549  cd task1
+  550  cat sentences.txt
+  551  cd lab1/task1
+  552  cat sentences.txt
+  553  grep -c \?$|\!$ sentences.txt
+  554  grep -c (\?$)|(\!$) sentences.txt
+  555  grep -c \(\?$\)\|\(\!$\) sentences.txt
+  556  grep -c \(\?$\)|\(\!$\) sentences.txt
+  557  grep -c \?$ sentences.txt
+  558  grep -c \!$ sentences.txt
+  559  grep -c \! sentences.txt
+  560  grep -c '\!$' sentences.txt
+  561  nano sentences.txt
+  562  grep -c '\!$' sentences.txt
+  563  grep -c '\&$' sentences.txt
+  564  grep -c '\?$' sentences.txt
+  565  grep '\?$' sentences.txt
+  566  grep '\?' sentences.txt
+  567  grep '?' sentences.txt
+  568  grep '?$' sentences.txt
+  569  grep '!' sentences.txt
+  570  nano sentences
+  571  ls
+  572  nano sentences.txt
+  573  grep '!' sentences.txt
+  574  grep sentences.txt sentences.txt
+  575  grep '\.' sentences.txt
+  576  grep '\.$' sentences.txt
+  577  grep \.$ sentences.txt
+  578  grep '\.$' sentences.txt
+  579  grep -r '\.$' sentences.txt
+  580  grep '/.$' sentences.txt
+  581  grep '.$' sentences.txt
+  582  grep '^«' sentences.txt
+  583  cat sentences.txt 
+  584  nano sentences.txt
+  585  echo Привет! >> sentences.txt 
+  586  grep '!$' sentences.txt
+  587  touch text.txt
+  588  grep '!\$' sentences.txt
+  589  grep '!/$' sentences.txt
+  590  grep '! ' sentences.txt
+  591  grep '!' sentences.txt
+  592* cat s
+  593  grep '?$' sentences.txt
+  594  ls
+  595  cat text.txt 
+  596  grep 'Василиса' text.txt 
+  597  grep 'Василиса' sentences.txt 
+  598  grep '^Василиса' sentences.txt >> text.txt 
+  599  cat text.txt 
+  600  grep '\.$'  text.txt 
+  601  nano text.txt 
+  602  echo Василиса Егоровна приняла нас запросто и радушно и обошлась со мною как бы век была знакома. > text.txt 
+  603  echo «Что это мой Иван Кузьмич сегодня так заучился! - сказала комендантша. - Палашка, позови барина обедать. Да где же Маша?» >> text.txt 
+  604  cat text.txt 
+  605  echo С первого взгляда она не очень мне понравилась. >> text.txt 
+  606  echo Я смотрел на нее с предубеждением: Шваб 
+  631  grep -c '\(?$\)\|\(!$\)'  text.txt 
+  632  history > history1.txt

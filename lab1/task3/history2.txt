@@ -1,0 +1,3 @@
+   
+   67  awk -f prog2.awk ЦУМ_10.10.2006
+   68  history > history2.txt

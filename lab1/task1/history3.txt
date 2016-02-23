@@ -1,0 +1,3 @@
+ 
+    9  grep '' text.txt | sort
+   10  history > history3.txt

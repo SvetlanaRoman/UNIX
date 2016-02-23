@@ -1,0 +1,3 @@
+   38  sed '/!$/a\!!!' text.txt 
+   39  cat text.txt 
+   40  history > history4.txt

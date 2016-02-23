@@ -1,0 +1,2 @@
+   16  grep -w -c '\(\bМаш[аиуе]\b\)\|\(\bМашей\b\)' text.txt 
+   17  history > history4.txt 

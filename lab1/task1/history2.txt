@@ -1,0 +1,7 @@
+    1  rm ~/.bash_history
+    2  history
+    3  cd lab1
+    4  cd task1
+    5  cat text.txt 
+    6  grep '^«' text.txt 
+    7  history > history2.txt

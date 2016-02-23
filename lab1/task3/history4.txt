@@ -1,0 +1,3 @@
+
+   75  awk -f prog4.awk *
+   76  history > history4.txt

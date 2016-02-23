@@ -1,0 +1,3 @@
+   33  sed 's/\(.\)*\(\bМаш[аиуе]\b\)\(.\)*\|\(.\)*\(\bМашей\b\)\(.\)*/Маша/' text.txt 
+   34  cat text.txt 
+   35  history > history2.txt
